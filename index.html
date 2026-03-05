@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <link rel="icon" href="favicon.png" type="image/png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>個人履歷 | LinSingSian</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header id="top" class="banner">
+        <div class="banner-content">
+            <h1>SingSian's Profile</h1>
+            <!--p>財務分析 × 程式開發</p-->
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="javascript:void(0)" onclick="showSection('family')">家庭狀況</a></li>
+            <li><a href="javascript:void(0)" onclick="showSection('edu')">學歷證書</a></li>
+            <li><a href="javascript:void(0)" onclick="showSection('work')">工作經歷</a></li>
+            <li><a href="javascript:void(0)" onclick="showSection('fin-portfolio')">財務作品</a></li>
+            <li><a href="javascript:void(0)" onclick="showSection('code-portfolio')">程式作品</a></li>
+            <li><a href="javascript:void(0)" onclick="showSection('certs')">專業證照</a></li>
+            <li><a href="javascript:void(0)" onclick="showSection('interests')">語言興趣</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+
+        <section id="family">
+            <h2>家庭狀況</h2>
+
+            <ul style="list-style: none; padding-left: 0; line-height: 1.8; margin-bottom: 20px;">
+                <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                    <span style="color: #e67e22; position: absolute; left: 0;">●</span>
+                    <strong>父親：</strong>退休前擔任土木工程師，在我大學時期會帶我參與測量助理的工作，此階段培養我對數字的耐心，也影響我找工作的方向。
+                </li>
+                <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                    <span style="color: #e67e22; position: absolute; left: 0;">●</span>
+                    <strong>母親：</strong>婚育後擔任家管，對子女的成績管控較嚴格，幼時沒有機會升學，時常提醒我讀書的重要性。
+                </li>
+                <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                    <span style="color: #e67e22; position: absolute; left: 0;">●</span>
+                    我與姊姊都在不同的領域發展。
+                </li>
+            </ul>
+
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="family.png" alt="家庭插畫" class="protected-img
+                    style=" max-width: 50%; height: auto; border-radius:6px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            </div>
+
+            <p style="text-align:right;">
+            </p>
+        </section>
+
+        <section id="edu">
+            <h2>學歷與證書</h2>
+            <div class="item">
+                <strong>國立中正大學 - 企管碩士班財務組</strong> | 碩士 <br>
+                <small>2010 - 2012</small>
+            </div>
+            <div class="item">
+                <span class="tag">行為財務學</span> 論文：
+                <a href="https://hdl.handle.net/11296/f9chmg" target="_blank" rel="noopener noreferrer">
+                    An Investigating of the Effects of Appointing Independent Director on CEO Overconfidence
+                </a>
+            </div>
+            <div>
+                <p>This paper examines the relation between independent director appointment and subsequent CEO
+                    overconfidence.
+                    Using annual financial information of listed companies in Taiwan and paired-samples of appointments
+                    and non-appointments
+                    to analyze CEO overconfidence measures, such as financial forecast bias, net stock purchase and
+                    capital investment rate,
+                    we investigate the moderating and magnifying effects of independent director appointment on CEO
+                    overconfidence under
+                    considering independent director functions such as expertise and independence.
+                    We find that independent director appointment has significant magnifying effect on CEO
+                    overconfidence (financial forecast bias),
+                    and independent director independence has significantly intensified impact on CEO overconfidence.
+                    The outcome provides a reference to regulator and investors that there is no surveillance effect of
+                    independent director on CEO‟s personality.
+                </p>
+            </div>
+            <div class="toggle-container" onclick="toggleContent(this)">
+                <span id="toggleText">▶ 畢業證書</span>
+                <div class="content" id="imgContent" class="img-overlay">
+                    <img src="中正大學.JPG" alt="中正大學" class="protected-img
+                        style=" max-width: 70%; height: auto; border-radius:6px; box-shadow: 0 4px 8px
+                        rgba(0,0,0,0.1);">
+                </div>
+            </div>
+            <div class="item">
+                <strong>國立中興大學 - 企業管理學系</strong> | 學士 <br>
+                <small>2006 - 2010</small>
+            </div>
+            <div class="toggle-container" onclick="toggleContent(this)">
+                <span id="toggleText">▶ 畢業證書</span>
+                <div class="content" id="imgContent" class="img-overlay">
+                    <img src="中興大學.png" alt="中興大學"
+                        style="max-width: 70%; height: auto; border-radius:6px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                </div>
+            </div>
+            <p style="text-align: right;">
+            </p>
+        </section>
+
+        <section id="work">
+            <h2>工作經歷</h2>
+            <div class="item">
+                <strong>台新證券股份有限公司 軟體工程師</strong> <br>
+                <span class="tag">Ｃ＃</span>
+                <span class="tag">MS SQL - SP、View、Agent</span>
+                <span class="tag">COBOL</span><br>
+                <small>2023/3 - 2026/2</small><br>
+                <ul>
+                    <li>⚪台新新光合併案-獎勵金系統開發(使用者介面、資料庫建立、報表系統)
+                    </li>
+                    <li>⚪考取證照- 期貨營業員、ESG永續發展資格
+                    </li>
+                    <li>⚪無紙化系統開發維護- 跨平台報表分類上傳程式開發、權限設定
+                    </li>
+                    <li>⚪國稅局各項申報報表，查詢、上傳程式開發
+                    </li>
+                    <li>⚪結算帳務自動檢核，異常通知簡訊與Email寄發程式開發
+                    </li>
+                </ul>
+            </div>
+            <div class="item">
+                <strong>智慧應用微軟C# 工程師就業養成班學員</strong> <br>
+                <small>2022/9 - 2023/2</small>
+                <ul>
+                    <li>⚪程式語言-C#、元件開發
+                    </li>
+                    <li>⚪資料存取-SQL Server、ADO.NET、LINQ、Entity Framework
+                    </li>
+                    <li>⚪網頁技術-HTML/CSS、JavaScript、jQuery、Restful API、 Ajax 應用、ASP.NET Core MVC
+                    </li>
+                    <li>⚪Azure認知服務、Excel VBA、商業智慧Power BI
+                    </li>
+                    <li>⚪.NET-桌面 WPF MVVM、Win Forms、UWP、MAUI Xamarin App
+                    </li>
+                </ul>
+            </div>
+            <div class="item">
+                <strong>聯強國際股份有限公司 財務分析員</strong> <br>
+                <span class="tag">財務分析</span>
+                <span class="tag">集團合併報表</span>
+                <span class="tag">集團進銷存帳務系統規劃</span><br>
+                <small>2019/5 - 2022/8</small>
+                <ul>
+                    <li>⚪損益、資產負債、費用分析(20+海外分公司)
+                    </li>
+                    <li>⚪集團獎勵金系統，運用分析及稽核
+                    </li>
+                    <li>⚪跨公司帳務-倉儲/庫房租金…沖銷報表合併作業(30+海外分公司)
+                    </li>
+                    <li>⚪月結及管理報表(20+海外分公司)
+                    </li>
+                    <li>⚪各項會計系統作業SOP製作與優化
+                    </li>
+                </ul>
+            </div>
+            <div class="item">
+                <strong>資拓宏宇國際股份有限公司 會計專員</strong> <br>
+                <span class="tag">稅務結算申報</span>
+                <span class="tag">帳務審核</span><br>
+                <small>2019/5 - 2022/8</small>
+                <ul>
+                    <li>⚪公司營業稅/印花稅 結算申報
+                    </li>
+                    <li>⚪福委會帳務 結算申報
+                    </li>
+                    <li>⚪主管特支費控管與審核
+                    </li>
+                    <li>⚪軟硬體/人力外包採購審核
+                    </li>
+                    <li>⚪外幣評價
+                    </li>
+                </ul>
+            </div>
+            <p style="text-align: right;">
+            </p>
+        </section>
+
+        <section id="fin-portfolio">
+            <h2>作品集 - 財務類</h2>
+            <div class="item">
+                <h3 style="margin-bottom: 10px;">📜 (Power BI) 進貨分析</h3>
+                <div class="toggle-container" onclick="toggleContent(this)">
+                    <span id="toggleText">▶ 查看</span>
+
+                    <div class="content" id="imgContent" class="img-overlay">
+                        <img src="進貨分析.png" alt="進貨分析" class="protected-img
+                            style=" max-width: 70%; height: auto; border-radius:6px; box-shadow: 0 4px 8px
+                            rgba(0,0,0,0.1);">
+                    </div>
+                </div>
+                <h3 style="margin-bottom: 10px;">📜 (Power BI) 銷貨分析</h3>
+                <div class="toggle-container" onclick="toggleContent(this)">
+                    <span id="toggleText">▶ 查看</span>
+
+                    <div class="content" id="imgContent" class="img-overlay">
+                        <img src="銷貨分析.png" alt="銷貨分析" class="protected-img
+                            style=" max-width: 70%; height: auto; border-radius:6px; box-shadow: 0 4px 8px
+                            rgba(0,0,0,0.1);">
+                    </div>
+                </div>
+
+                <h3 style="margin-bottom: 10px;">📜 (Power BI) 獲利分析</h3>
+                <div class="toggle-container" onclick="toggleContent(this)">
+                    <span id="toggleText">▶ 查看</span>
+                    <div class="content" id="imgContent" class="img-overlay">
+                        <img src="獲利分析.png" alt="獲利分析" class="protected-img
+                            style=" max-width: 70%; height: auto; border-radius:6px; box-shadow: 0 4px 8px
+                            rgba(0,0,0,0.1);">
+                    </div>
+                </div>
+                <h3 style="margin-bottom: 10px;">🧮 (VBA) 收據填寫</h3>
+                <div class="toggle-container" onclick="toggleContent(this)">
+                    <span>▶ 查看</span>
+                    <div class="content" class="img-overlay">
+                        <img src="收據填寫.gif" alt="收據填寫" class="protected-img
+                            style=" max-width: 70%; height: auto; border-radius:6px; box-shadow: 0 4px 8px
+                            rgba(0,0,0,0.1);">
+                    </div>
+                </div>
+            </div>
+            <p style="text-align: right;">
+            </p>
+        </section>
+
+        <section id="code-portfolio">
+            <h2>作品集 - 程式類</h2>
+            <div class="item">
+                <strong>購物網站 & 後臺管理維護</strong> <br>
+            </div>
+            <div class="toggle-container" onclick="toggleContent(this)">
+                <span id="toggleText">▶ 作品1</span>
+                <div class="content" id="imgContent" class="img-overlay">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/mgkZuTQjXgE?start=6720"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+            <div class="item">
+                <strong>物聯網感測器儀表板實作</strong> <br>
+            </div>
+            <div class="toggle-container" onclick="toggleContent(this)">
+                <span id="toggleText">▶ 作品2</span>
+                <!--https://youtube.com/shorts/msKL_uFyt7k?feature=share-->
+                <div class="content" id="imgContent" class="img-overlay">
+                    <div class="video-container">
+                        <div class="video-container">
+                            <iframe src="https://www.youtube.com/embed/msKL_uFyt7k" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p style="text-align: right;">
+            </p>
+        </section>
+
+        <section id="certs">
+            <h2>證照與證書</h2>
+            <ul>
+                <li>TOEIC</li>
+                <div class="toggle-container" onclick="toggleContent(this)">
+                    <span id="toggleText">▶ TOEIC</span>
+                    <div class="content" id="imgContent" class="img-overlay">
+                        <img src="TOEIC.png" alt="TOEIC" class="protected-img 
+                            style=" max-width: 70%; height: auto; border-radius:6px; box-shadow: 0 4px 8px
+                            rgba(0,0,0,0.1);">
+                    </div>
+                </div>
+                <li>期貨業務員資格</li>
+                <div class="toggle-container" onclick="toggleContent(this)">
+                    <span id="toggleText">▶ 期貨業務員資格</span>
+                    <div class="content" id="imgContent" class="img-overlay">
+                        <img src="期貨業務員資格.png" alt="期貨業務員資格" class="protected-img
+                            style=" max-width: 70%; height: auto; border-radius:6px; box-shadow: 0 4px 8px
+                            rgba(0,0,0,0.1);">
+                    </div>
+                </div>
+                <li>ESG永續發展資格</li>
+                <div class="toggle-container" onclick="toggleContent(this)">
+                    <span id="toggleText">▶ ESG永續發展資格</span>
+                    <div class="content" id="imgContent" class="img-overlay">
+                        <img src="ESG永續發展資格.png" alt="ESG永續發展資格" class="protected-img
+                            style=" max-width: 70%; height: auto; border-radius:6px; box-shadow: 0 4px 8px
+                            rgba(0,0,0,0.1);">
+                    </div>
+                </div>
+                <li>國際貿易技術士</li>
+                <div class="toggle-container" onclick="toggleContent(this)">
+                    <span id="toggleText">▶ 國際貿易技術士</span>
+                    <div class="content" id="imgContent" class="img-overlay">
+                        <img src="國際貿易技術士.jpg" alt="國際貿易技術士" class="protected-img
+                            style=" max-width: 70%; height: auto; border-radius:6px; box-shadow: 0 4px 8px
+                            rgba(0,0,0,0.1);">
+                    </div>
+                </div>
+            </ul>
+            <p style="text-align: right;">
+            </p>
+        </section>
+
+        <section id="interests">
+            <h2>語言能力與個人興趣</h2>
+
+            <h3>語言能力</h3>
+            <ul>
+                <li>
+                    <strong>英文</strong>
+                </li>
+                <li>
+                    財務分析員期間，做過海外稽核，商用的Email往來及溝通可
+                </li>
+
+                <li>
+                    <strong>韓文</strong>
+                    <div class="flex-container">
+                        <div class="imgContent">
+                            <img src="韓文1.JPEG" alt="韓文1" class="fixed-img">
+                        </div>
+                        <div class="imgContent">
+                            <img src="韓文2.JPEG" alt="韓文2" class="fixed-img">
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <h3>個人興趣</h3>
+            <ul>
+                <li>
+                    <strong>園藝</strong>
+                    <div class="flex-container">
+                        <div class="imgContent">
+                            <img src="園藝1.jpeg" alt="園藝1" class="fixed-img">
+                        </div>
+                        <div class="imgContent">
+                            <img src="園藝2.jpeg" alt="園藝2" class="fixed-img">
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <p style="text-align: right;">
+            </p>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2026 hsingnchu@gmail.com All Rights Reserved.</p>
+    </footer>
+    <a href="#top" class="fixed-back-to-top">↑ TOP</a>
+    <script>
+        function checkPassword() {
+            // 1. 取得今日日期
+            const today = new Date();
+
+            // 2. 將日期格式化為 YYYYMMDD (例如 20260305)
+            // getFullYear() 取得年份
+            // getMonth() 從 0 開始，所以要 +1
+            // padStart(2, '0') 確保月和日都是兩位數 (如 03, 05)
+            const year = today.getFullYear();
+            const month = String(today.getMonth() + 1).padStart(2, '0');
+            const day = String(today.getDate()).padStart(2, '0');
+
+            const todayPassword = `${year}${month}${day}`;
+
+            // 3. 詢問密碼
+            const inputPassword = prompt("請輸入密碼:");
+
+            // 4. 比對日期
+            if (inputPassword === todayPassword) {
+                alert("密碼正確，感謝訪問！");
+                showSection('family');
+            } else {
+                alert("密碼錯誤或已過期。");
+                window.location.href = "about:blank";
+            }
+        }
+
+        // 啟動時只要呼叫檢查函式即可
+        window.addEventListener('load', checkPassword);
+
+        function showSection(targetId) {
+            // 1. 隱藏所有 section (假設你的 section 都有共同的 class="page-content")
+            const sections = document.querySelectorAll('section');
+            sections.forEach(sec => sec.style.display = 'none');
+
+            // 2. 顯示目標 section
+            const target = document.getElementById(targetId);
+            if (target) {
+                target.style.display = 'block';
+            }
+        }
+
+        function toggleContent(element) {
+            // 找到被點擊元素內的 .content 和第一個 span
+            const content = element.querySelector('.content');
+            const text = element.querySelector('span');
+
+            // 切換顯示狀態
+            if (content.style.display === 'block') {
+                content.style.display = 'none';
+                element.classList.remove('active');
+                text.innerText = '▶ 查看';
+            } else {
+                content.style.display = 'block';
+                element.classList.add('active');
+                text.innerText = '▼ 收合';
+            }
+        }
+        /*function toggleContent() {
+            const box = document.getElementById('toggleBox');
+            const content = document.getElementById('imgContent');
+            const text = document.getElementById('toggleText');
+
+            // 切換顯示狀態
+            if (content.style.display === 'block') {
+                content.style.display = 'none';
+                box.classList.remove('active');
+                text.innerText = '▶ 查看';
+            } else {
+                content.style.display = 'block';
+                box.classList.add('active');
+                text.innerText = '▼ 收合';
+            }
+        }*/
+    </script>
+</body>
+
+</html>
