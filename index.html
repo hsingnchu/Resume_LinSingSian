@@ -191,17 +191,15 @@
 
         <section id="fin-portfolio">
             <h2>作品集 - 財務類</h2>
-            <div class="item">
-                <h3 style="margin-bottom: 10px;">📜 (Power BI) 進貨分析</h3>
-                <div class="toggle-container" onclick="toggleContent(this)">
-                    <span id="toggleText">▶ 查看</span>
 
-                    <div class="content" id="imgContent" class="img-overlay">
-                        <img src="進貨分析.png" alt="進貨分析" class="protected-img
-                            style=" max-width: 70%; height: auto; border-radius:6px; box-shadow: 0 4px 8px
-                            rgba(0,0,0,0.1);">
-                    </div>
-                </div>
+            <div>
+                <a href="https://app.powerbi.com/groups/me/reports/65d33b3f-ad14-478e-9e4b-9e170800bd16/1e5c1f9165053b1ebd6d?experience=power-bi"
+                    target="_blank" rel="noopener noreferrer"
+                    style="color: #0078d4; text-decoration: underline; font-weight: bold;">
+                    📊 點此開啟：Power BI 報表 (Portal)
+                </a>
+            </div>
+            <div class="item">
                 <h3 style="margin-bottom: 10px;">📜 (Power BI) 銷貨分析</h3>
                 <div class="toggle-container" onclick="toggleContent(this)">
                     <span id="toggleText">▶ 查看</span>
@@ -238,8 +236,28 @@
 
         <section id="code-portfolio">
             <h2>作品集 - 程式類</h2>
+
+            <div class="item">
+                <strong>訂單拆分工具</strong> <br>
+            </div>
+            <div>
+
+                <a href="https://docs.google.com/spreadsheets/d/18dqkV51_zVshM3JxNpsk_N1fiXH66K01kXD_GFobces/edit"
+                    target="_blank">
+                    執行訂單拆分-表單連結
+                </a><br>
+                <strong>預覽</strong> <br>
+                <p id="status"></p>
+
+                <iframe
+                    src="https://docs.google.com/spreadsheets/d/18dqkV51_zVshM3JxNpsk_N1fiXH66K01kXD_GFobces/edit?usp=sharing"
+                    class="iframe-GAS">
+                </iframe>
+            </div>
+
             <div class="item">
                 <strong>購物網站 & 後臺管理維護</strong> <br>
+                <a href="https://www.youtube.com/watch?v=mgkZuTQjXgE?start=6720" target="_blank">購物網站 & 後臺管理維護</a> <br>
             </div>
             <div class="toggle-container" onclick="toggleContent(this)">
                 <span id="toggleText">▶ 作品1</span>
@@ -253,6 +271,7 @@
             </div>
             <div class="item">
                 <strong>物聯網感測器儀表板實作</strong> <br>
+                <a href="https://www.youtube.com/watch?v=msKL_uFyt7k"  target="_blank">物聯網感測器儀表板實作</a> <br>
             </div>
             <div class="toggle-container" onclick="toggleContent(this)">
                 <span id="toggleText">▶ 作品2</span>
@@ -423,22 +442,21 @@
                 text.innerText = '▼ 收合';
             }
         }
-        /*function toggleContent() {
-            const box = document.getElementById('toggleBox');
-            const content = document.getElementById('imgContent');
-            const text = document.getElementById('toggleText');
 
-            // 切換顯示狀態
-            if (content.style.display === 'block') {
-                content.style.display = 'none';
-                box.classList.remove('active');
-                text.innerText = '▶ 查看';
-            } else {
-                content.style.display = 'block';
-                box.classList.add('active');
-                text.innerText = '▼ 收合';
-            }
-        }*/
+        /*訂單拆分工具*/
+        function runSplit() {
+
+            document.getElementById("status").innerText = "執行中...";
+
+            google.script.run
+                .withSuccessHandler(function (result) {
+                    document.getElementById("status").innerText = result;
+                })
+                .splitOrders();
+
+        }
+
+
     </script>
 </body>
 
